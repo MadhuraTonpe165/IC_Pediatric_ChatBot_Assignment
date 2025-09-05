@@ -7,9 +7,9 @@ import pickle
 
 # Load the chatbot function from pickle
 with open("Pedictric_Help_bot.pkl", "rb") as f:
-    chatbot_code = pickle.load(f)
+    chatbot_data = pickle.load(f)
 
-chatbot = chatbot_code()  # this gives us the chatbot function
+chatbot = chatbot_data()  # this gives us the chatbot function
 
 st.set_page_config(page_title="Pediatrician Chatbot", page_icon="🧸")
 
